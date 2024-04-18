@@ -1,0 +1,27 @@
+:root{
+--cor-de-fundo: blue;
+--verde: green;
+--branco: white;
+--botao-ativo:black;
+--botao-inativo: green ;
+--texto-fundo:  green ;
+
+}
+
+*{
+background-color: var(--cor-de-fundo);
+color: var(--branco);
+}
+
+span{
+color: var(--verde);
+
+}
+
+.conteudo-principal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
