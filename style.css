@@ -1,85 +1,76 @@
 :root{
---cor-de-fundo: rgb(13, 13, 14);
---verde: rgb(7, 231, 7);
---branco: white;
---botao-ativo:black;
---botao-inativo: rgb(18, 31, 32) ;
---texto-fundo:  rgb(232, 235, 232) ;
-
+    --cor-de-fundo: rgb(13, 13, 14);
+    --verde: rgb(7, 231, 7);
+    --branco: white;
+    --botao-ativo:black;
+    --botao-inativo: rgb(18, 31, 32) ;
+    --texto-fundo:  rgb(232, 235, 232) ;
 }
 
 *{
-    font-family: 'Chakra Petch', sans-serif;
-background-color: var(--cor-de-fundo);
-color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
 }
 
 span{
-color: var(--verde);
-
+    color: var(--verde);
 }
 
-.conteudo-principal{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
+.conteudoprin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.titulo-principal{
-text-align: center;
-width: 100%;
-font-size: 32px;
-
+.titulo{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
 }
 
 .botao{
- background-color: var(--botao-inativo);
- color: white;
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 1em;
- font-size: 18px;
- width: 100%;
- border-bottom: 4px solid var(--botao-ativo);
- border-left: 2px solid var(--botao-ativo);
- border-right: 2px solid var(--botao-ativo);
-
+    background-color: var(--botao-inativo);
+     color: var(--branco);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1em;
+     font-size: 18px;
+     width: 100%;
+     border-bottom: 4px solid var(--botao-ativo);
+     border-left: 2px solid var(--botao-ativo);
+     border-right: 2px solid var(--botao-ativo);
 }
+.ativo{ 
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde)
 
+ }
 .botoes{
-display: block;
-
+    display: block;
 }
 
 .botao:first-child{
     border-radius: 20px 20px 0 0;
-
 }
 
 .botao:last-child{
     border-radius: 0 0 20px 20px;
-
 }
 
 @media screen and (min-width: 700px){
     .botoes{
         display: flex;
     }
-  .botao:last-child{
-border-radius: 0 20px 20px 0;
+    .botao:last-child{
+        border-radius: 0 20px 20px 0;
+    }
 
-  }
-
-  .botao:first-child{
-
-border-radius:20px 0 0 20px ;
-
-  }
-    
-
+    .botao:first-child{
+        border-radius: 20px 0 0 20px;
+    }
 }
