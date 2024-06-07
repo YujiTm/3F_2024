@@ -6,7 +6,7 @@
     --botao-inativo: rgb(18, 31, 32) ;
     --texto-fundo:  rgb(232, 235, 232) ;
 }
-.body{
+body{
     background-color: var(--cor-de-fundo);
 }
 *{
@@ -50,10 +50,6 @@ span{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde)
  }
-.botoes{
-    display: block;
-}
-
 .botao:first-child{
     border-radius: 20px 20px 0 0;
 }
@@ -68,7 +64,7 @@ span{
   display: block;
 }
 .abas-texto{
-
+ background-color: var(--botao-inativo);
 }
 @media screen and (min-width: 700px){
     .botoes{
