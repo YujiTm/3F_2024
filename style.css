@@ -1,9 +1,9 @@
 :root{
-    --cor-de-fundo: rgb(13, 13, 14);
+    --cor-de-fundo: rgb(15, 15, 15);
     --verde: rgb(7, 231, 7);
     --branco: white;
-    --botao-ativo:black;
-    --botao-inativo: rgb(18, 31, 32) ;
+    --botao-ativo:rgb(40, 39, 41);
+    --botao-inativo: rgb(44, 39, 51) ;
     --texto-fundo:  rgb(232, 235, 232) ;
 }
 body{
@@ -64,7 +64,18 @@ span{
   display: block;
 }
 .abas-texto{
+    padding: 50px;
+    border-radius: 15px;
  background-color: var(--botao-inativo);
+}
+.aba-conteudo-principal{
+    font-size: 20px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 @media screen and (min-width: 700px){
     .botoes{
